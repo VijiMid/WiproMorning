@@ -1,0 +1,27 @@
+nested function
+
+abs
+ceil
+power
+sqrt
+
+in a single query
+
+select round(avg(distinct salary))
+
+select 
+
+
+SELECT * FROM `emp` where not(city like '%m' and jobid>4);
+
+select j.jobid,j.jobname,j.salary,e.empid,e.empname,e.city from Emp e, Job j where e.jobid=j.jobid;
+
+select j.jobid,j.jobname,j.salary,e.empid,e.empname,e.city from Emp e, Job j where e.jobid=j.jobid and j.salary between 70000 and 150000
+
+select j.jobid,j.jobname,j.salary,e.empid,e.empname,e.city from Emp e, Job j where e.jobid=j.jobid and e.empname between 'E' and 'T';
+
+select j.jobid,j.jobname,j.salary,e.empid,e.empname,e.city from Emp e, Job j where e.jobid=j.jobid and e.empname  not like '% %'
+
+NOT NULL DEFAULT CURRENT_TIMESTAMP
+
+CREATE TABLE passengers(id bigint not null,first_name varchar(50),last_name varchar(50),date_of_birth date,country_of_citizenship varchar(50),country_of_residence varchar(50),passport_number varchar(50),created_at timestamp,updated_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,PRIMARY KEY(id));

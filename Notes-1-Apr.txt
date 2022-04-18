@@ -1,0 +1,84 @@
+Interpolation Similar to format specificator of C lang
+%d,%c%f -
+
+C statement
+
+int a=10;
+printf("a is : %d",a);
+
+C sharp statement 
+string name;
+string email;
+
+ Console.WriteLine("Name is : {0} \n Email : {1}",name,email);
+ Console.WriteLine("Name is : " + a); 
+---------------------------------------------------------------
+Operators :
+1. Arithmetic (+,-,/,*,%)
+2. Logical (&&,||, !)
+3. Comparison (>,<,<=,>=,==,!=)
+4. Increment / decrement (++ , --) - Unary Operator
+5. Scope resolution (C++) ,(::)
+6. Bitwise (&, |) , (c , C++)
+7. Arithmetic assignment (+=,-=,/=,*=,%=) 
+8. Ternary(?,:)
+
+-----------------------
+Types :
+1. Binary
+2. Unary
+
+int a=5;
+int b=10;
+int c;
+c=b-a;//c= 5 	// binary  (if a operator operates 2 operands )
+c=-b; // c= -10 	// unary (if a operator operates single operand )
+---------------------------------------
+++ - This can increase by one number 
+
+; - Terminator
+It indicates end of the statement
+-----------------------------------
+we can use more than one operator In a formula / expression.
+--------------------------------------
+1. -1+4*6;
+2. (35+5)%7;
+3. 14+-4*6/11;
+4. 2+15/6*1-7%2;
+-------------------------------
+Control statement:
+1. Branching/decision making
+    1. If ,(if(cond)....,  if(cond)... else ...., if(cond)... else if (cond)... else if(cond)... so on... (ladder if)
+    2. Switch
+    3.Condtional / Ternary
+	
+2. Looping/Iteration
+
+If
+  if
+  else
+else
+---------------------------------
+Find biggest no from the 3 input using Ternary operator
+
+Hint : 1. without using && and any loop
+---------------------------------
+difference between If and switch
+1. If checks the cond at the form of True / false
+Switch choose the options
+
+2. we can'ts use string in switch (c,c++) - from java 8 can use string in switch
+But if we can check the strings
+
+3. we can't use else before if condition.
+but we can use default anywhere in switch case
+----------------------------------
+Ex 1: 
+Input - get a month in a number
+summer - 3,4,5
+spring - 6,7,8
+autumn - 9,10,11
+winter - 12 , 1,2 
+
+Using switch with less number of case 
+

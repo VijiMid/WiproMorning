@@ -1,0 +1,16 @@
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\bin\Debug\net5.0\CSharpSamples1.exe
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\bin\Debug\net5.0\CSharpSamples1.deps.json
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\bin\Debug\net5.0\CSharpSamples1.runtimeconfig.json
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\bin\Debug\net5.0\CSharpSamples1.runtimeconfig.dev.json
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\bin\Debug\net5.0\CSharpSamples1.dll
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\bin\Debug\net5.0\ref\CSharpSamples1.dll
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\bin\Debug\net5.0\CSharpSamples1.pdb
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\obj\Debug\net5.0\CSharpSamples1.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\obj\Debug\net5.0\CSharpSamples1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\obj\Debug\net5.0\CSharpSamples1.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\obj\Debug\net5.0\CSharpSamples1.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\obj\Debug\net5.0\CSharpSamples1.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\obj\Debug\net5.0\CSharpSamples1.dll
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\obj\Debug\net5.0\ref\CSharpSamples1.dll
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\obj\Debug\net5.0\CSharpSamples1.pdb
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CSharpSamples1\obj\Debug\net5.0\CSharpSamples1.genruntimeconfig.cache

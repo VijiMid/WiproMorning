@@ -1,0 +1,103 @@
+Trigger
+If you insert/update/delete a table records, it should do some affect/modify another table automatically.
+
+Real time example:
+if i marked absent in attendance table of emp.
+
+the table of salary get reduced 1 day salary for particular emp;
+
+Trigger alos one of the mostly used topics in sql like tables, stored procedures and function.
+
+create table empaudit(id int auto_increment primary key,empid varchar(50) not null, changedate datetime default null);
+
+
+create trigger beforeupdateEmp
+before update on emp
+for each row
+insert into empaudit set empid=old.empid,changedate=now();
+
+update emp set Empname='Ritik Namdevvv' where empid='E018';
+
+update emp set city='Ropar-Punjab' , empname='Ankur Chauhan' where empid='E008';
+-------------------------------
+Views
+1. if u dont  want to view all of ur records to other roles/clients/team members/end user, you can should view with some records.
+
+create view Empview as select jobid,jobname from job;
+
+roles/clients/team members
+select * from EmpView
+
+create view EmpCount(empid,number) as select empid,count(*) from attendance group by type;
+ 
+SELECT * FROM empcount;
+
+create view  Empcountattendance as select e.empid,e.empname, count(a.empid) from emp e inner join attendance a on a.empid=e.empid and a.type=1 group by empid;
+
+select * from Empcountattendance;
+
+create view workingdate as select distinct cdate from attendance a,emp e where a.empid=e.empid;
+
+select * from  workingdate;
+
+-------------------------------------------------
+Sql Commands/Query
+1. DDL - Data defintion Lang
+( create , alter , drop , truncate, rename)
+
+2. DML - Data Manipuation lang
+(select, insert,update delete, call)
+
+3. DCL - Data control Lang
+(grant-(give permission on particular view,table,procedure),
+revoke-(get back the permission))
+
+4. TCL-Transaction control Lang
+Transaction
+we can execute more than one query in a single unit.
+example - single execute
+insert values into emp, delete particular records from job table.
+
+If all queries are executed it save permanently. This process is called commit.
+
+if any single query get failed, all transactions are get rollback.
+rollback similar to undo.
+
+--------------------------------------
+
+user Management
+
+create user sai@localhost identified by 'pw';
+
+grant select on wipro.Emp to sai@localhost identified by 'pw';
+
+--------------------------------
+
+show create database wipro;
+
+show create table emp;
+
+show tables in wipro;
+
+show variables in wipro;
+
+SHOW PROCEDURE CODE getAll;
+
+SHOW TRIGGERS FROM Wipro;
+
+show views in wipro;
+
+SHOW FULL TABLES IN wipro WHERE TABLE_TYPE LIKE 'VIEW';
+--------------------------------
+
+
+
+
+
+
+Give - dml,ddl, 
+delete, update, view and extra queries.
+
+
+
+

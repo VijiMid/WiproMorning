@@ -1,0 +1,22 @@
+IDE - Integrated development Enviornment
+
+we can create different type of Application by using IDE.
+
+1. Windows Application
+2. Web Application
+3. Mobile Application
+4. Console Application (character based)
+5. Web services
+
+IDE
+--------
+Eclipse	- Java
+Visual Studio - Dot Net 
+Netbeans - Java
+VS Code - Angular, NodeJs
+Anaconda - Python
+Pycharm - Python
+
+Visual Studio - Community (Free only)
+
+Don't download Developer Version .It will be free for Only one month

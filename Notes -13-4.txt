@@ -1,0 +1,43 @@
+select curdate();
+select now();
+
+select datediff(curdate(),'2020-04-13');
+
+
+select curtime();
+select timediff(curtime(),'12:30:30');
+
+select timestampdiff(hour,'2022,-04-12 12:00:00',now());
+
+select timestampdiff(hour,'2022,-04-12',curdate());
+
+select day(curdate()),month(curdate()),year(curdate());
+select dayname(curdate());
+
+select dayofweek(curdate());
+select sysdate();
+
+select week(curdate());
+select weekday(curdate());
+
+select adddate(curdate(),interval 1 Month);
+
+
+select subdate(curdate(),interval 1 Month);
+
+select extract(year from now()),extract(month from now()),extract(day from now());
+
+select * from emp where jobid=(select jobid from job );
+
+
+select * from emp where jobid=(select jobid from job where jobname='Developer') and city like 'r%';
+
+select avg(salary) from job;
+
+select jobid,salary from job where salary > (select avg(salary) from job);
+
+100000.0000 - avg
+
+select * from emp where jobid in(select jobid from job where jobname='Developer' and salary>=(select avg(salary) from job));
+select * from emp where jobid in(select jobid from job where jobname='Developer' and salary>=(select avg(salary) from job));
+

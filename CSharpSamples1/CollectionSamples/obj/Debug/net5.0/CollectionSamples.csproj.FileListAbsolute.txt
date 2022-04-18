@@ -1,0 +1,16 @@
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\bin\Debug\net5.0\CollectionSamples.exe
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\bin\Debug\net5.0\CollectionSamples.deps.json
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\bin\Debug\net5.0\CollectionSamples.runtimeconfig.json
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\bin\Debug\net5.0\CollectionSamples.runtimeconfig.dev.json
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\bin\Debug\net5.0\CollectionSamples.dll
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\bin\Debug\net5.0\ref\CollectionSamples.dll
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\bin\Debug\net5.0\CollectionSamples.pdb
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\obj\Debug\net5.0\CollectionSamples.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\obj\Debug\net5.0\CollectionSamples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\obj\Debug\net5.0\CollectionSamples.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\obj\Debug\net5.0\CollectionSamples.AssemblyInfo.cs
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\obj\Debug\net5.0\CollectionSamples.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\obj\Debug\net5.0\CollectionSamples.dll
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\obj\Debug\net5.0\ref\CollectionSamples.dll
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\obj\Debug\net5.0\CollectionSamples.pdb
+C:\Users\ADMIN\Desktop\Wipro-March-Morning\CSharpSamples1\CollectionSamples\obj\Debug\net5.0\CollectionSamples.genruntimeconfig.cache

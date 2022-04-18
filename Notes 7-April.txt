@@ -1,0 +1,33 @@
+We can't create autoincrement to a varchar field, but can create primary key.
+
+create table Emp(empid varchar(50) not null primary key, empname varchar(50) not null, jobid int, FOREIGN key(jobid) REFERENCES job(jobid) , city varchar(50));
+
+* - return all records and all columns.
+
+
+select jobid, jobname,salary, (salary+(salary*30/100)+(salary*10/100) "Total Salary" from job;
+
+Aggregate/Scalar function (This kind of functions can return only one output)
+1. sum
+2. avg
+3. min
+4. max
+5. count
+
+Group by - we can use aggregate function
+
+SELECT jobid, sum(salary) FROM `job` GROUP by salary;
+
+SELECT jobid, count(jobid) FROM emp GROUP by jobid; 
+
+select avg(salary),round(avg(salary)),round(avg(salary),2) from job;
+
+select avg(distinct salary),round(avg(distinct salary)),round(avg(distinct salary),2) from job;
+
+select avg(distinct salary),round(avg(distinct salary)),round(avg(distinct salary),2) from job groub by salary;
+
+select * from Emp where empname like 'A%';
+
+select * from Emp where empname like 'A%' order by empname;
+
+SELECT avg(DISTINCT salary),round(DISTINCT avg(salary)),round(DISTINCT avg(salary),2) from job 

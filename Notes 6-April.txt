@@ -1,0 +1,61 @@
+Presentation Layer (Ex: sigin interface)
+Business Logic Layer (Coding - Php, j2ee, Asp .net, Python - server side scripting )
+Database (Server)
+
+Database Sw
+1. MySql - PHP
+2. Microsoft Sql server Management studio(SSMS) - Visual studio 
+3. Ms Access - Old db sw
+4. Oracle - Java (Oracle)
+5. MongoDB - Python
+
+6. NoSql
+7. SQLite - Android
+8. db2 and so on ...
+
+select * from Tablename; - Query (MySql, SSMS, MS Access, Oracle)
+
+int a; // declaration statement
+C, C++, java and C sharp...
+-----------------------------------------------------
+Clients
+
+Hospital mgmt (DB)- MySql and PHP
+	1. Patient - Table (PaId,PaName, Dieases - Fields)
+
+	2. Doctor - Table(Docid, DocName, Specialist- Fields)
+
+shopping mall (DB)- MySql and Python
+	1. Customer - Table (CusId,Custname, Email- Fields)
+
+	2. Product - Table(Prodid,Prodname, Price- Fields)
+
+Online Learning(DB)- SSMS and Dot Net
+	1. Students  - Table- (stdid,stdname, couname- Fields)
+
+	2. Course - Table - (couid, couname, duraion- Fields)
+
+Manipulations :
+
+1. Insert
+2. Modify
+3. Delete
+4. Alter
+5.Select
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

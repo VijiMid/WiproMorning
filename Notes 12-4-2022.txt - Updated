@@ -1,0 +1,215 @@
+in Xammp - Pink color word - Keyword.
+keywords are reserved words.
+
+It specified for particular task.
+
+ 
+Stored Procedure
+1. can execute more than one statement in single unit
+2. we can do control statement operations in stored procedure (if,switch, for, while, do.. while)
+3. By passing a single name , can do more operation
+4. because that can avoid network traffic , save time, memory mgmt)
+5. can use stored procedure in the languages of Php,python, C sharp, VB , java, javascript and so on ....
+---------------------------------------------------------------
+DELIMITER //
+create PROCEDURE wipro.getAllSalary()  // example for default procedure
+BEGIN
+select * from job;
+end//
+
+-------------
+call getAllSalary; - procedure calling
+
+in c sharp
+
+Routine -
+procedure - no need to return a value.
+function - should return a value. if u want to not return a value can use void.
+procedure / function
+1. user defined
+	1. default
+	2. parameterized (call by value, call by ref/address)
+
+2. pre defined
+	1. default
+	2. parameterized (call by value, call by ref/address)
+
+----------------------------
+DELIMITER //
+create procedure wipro.getCityCount2(in pcity varchar(50),out sumanth int)
+begin
+select count(city) into sumanth  from emp  where city=pcity;
+end//
+
+
+call getCityCount('Kanpur',@sumanth );
+select @sumanth 
+
+--------------------------------------------
+delimiter //
+create procedure Wipro.getSal(in Jid int,out status varchar(50))
+BEGIN
+declare sal int default 0;   
+select salary into sal from job where jobid=jid;
+IF sal>=100000 THEN
+set STATUS="No Incentive";
+elseif sal<=150000 and sal>100000 THEN
+set STAtus = 'Nil';
+ELSE
+set STATUS="Eligible for Incentive";
+end IF;
+end// 
+
+call getSal(10,@status);
+select @status;
+
+
+
+---------------------------
+insert into empemail values('E001','aa@gmail.com');
+insert into empemail values('E002','bb@gmail.com');
+insert into empemail values('E003','cc@gmail.com');
+insert into empemail values('E004','dd@gmail.com');
+---------------------------
+delimiter //
+create procedure Wipro.EmailList(inout emails varchar(500))
+BEGIN
+declare fin int default 0; 
+declare emailaddress varchar(100) default "";
+declare curemail cursor for select empemail from empemail;
+declare continue handler for not found set fin = 1;
+open curemail;
+getEmail:Loop
+fetch curemail into emailaddress;
+if fin=1 then
+leave getEmail;
+end if;
+set emails=concat(emailaddress,";",emails);
+end Loop getEmail;
+close curemail;
+end // 
+
+
+inout  -  used to same variable to store the input value as well as output also.
+
+
+
+declare curemail cursor for select empemail from empemail;
+
+curemail - variable name
+cursor - used to handle/store more than one records 
+
+declare continue handler for not found set fin = 1;
+continue handler - has to process till end 
+not found - EOF
+
+
+getEmail:Loop
+
+getEmail - Label. any label name can give.
+
+leave getEmail; - coming out from the Label
+concat - predefined parameterized function . It can combine 2 strings.
+
+set emails=concat(emailaddress,";",emails);
+// The above line form the content to send mail for multiple emails
+
+close curemail; // To release the memory space.
+
+------------------
+set @emails="";
+call emailList(@emails);
+select @emails;
+
+dd@gmail.com;cc@gmail.com;bb@gmail.com;aa@gmail.co...
+you can use this output into ur C Sharp , java, python and so on
+
+------------------
+// can store more than one records
+//getEmail - is act as a lable. any name can give expect keywords
+---------------------
+delimiter //
+create procedure Wipro.getName(in ename varchar(50))
+BEGIN 
+select * from emp where empname=ename;
+end// 
+
+ 
+call getName("Meesala Ravikiran");
+
+----------------------
+delimiter //
+create procedure Wipro.getNamestart(in ename varchar(50))
+BEGIN
+ 
+select * from emp where empname like 'ename%';
+end// 
+
+ 
+call getNamestart("M");
+---------------------
+
+delimiter //
+CREATE PROCEDURE wipro.getNamestart
+      @SearchTerm NVARCHAR(30)
+AS
+BEGIN  
+      SELECT *    FROM emp  WHERE empName LIKE '%' + @SearchTerm + '%';
+END//
+-----------------------------
+delimiter //
+create procedure Wipro.setCounter(inout counter int,in inc int)
+BEGIN
+set counter=counter+inc;
+end// 
+
+set @counter=1;
+call setCounter(@counter,5);
+select @counter;
+
+call setCounter(@counter,5);
+select @counter;
+-----------------------------------
+delimiter //
+create procedure Wipro.GetTotal()
+BEGIN
+declare total int default 0;
+select count(*) into total from emp;
+select total;
+end//
+
+call GetTotal();
+-------------------------
+In SQL diff function and procedure
+we can use function inside a query.It can't execute independently.
+But can't used procedure inside a query. It can execute independently.
+
+delimiter //
+create function isEligible(salary int)
+returns varchar(50)
+deterministic
+begin
+if salary<70000 then
+return ("Yes");
+else
+return ("No");
+end if;
+end;//
+ 
+SELECT isEligible(90000)
+
+
+--------------------------
+delimiter //
+create function GetCity(eid varchar(50))
+returns varchar(50)
+deterministic
+begin 
+declare ccity varchar(50);
+select city into ccity from Emp where empid =eid;
+return(ccity);
+end;//
+
+select distinct getcity('E001') from emp;
+distinct can display the data only once.
+----------------------------

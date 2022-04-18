@@ -1,0 +1,72 @@
+Joins Constraints: 
+1. Inner join
+2. Left Inner join,
+3. right Inner join.
+
+use of Joins:
+we can connect two table to fetch the records based on conditions.
+
+Rules:
+we need common fields While using the joins . 
+Constraint - common fields name may be differ or same, BUT the datatype should be  same. 
+
+
+select  j.jobid, j.jobname,  e.empid, e.empname, e.city, j.salary from Emp e inner join job  j on e.jobid=j.jobid   => 1
+select  j.jobid, j.jobname,  e.empid, e.empname, e.city, j.salary from Emp e Left join job  j on e.jobid=j.jobid    => 2
+select  j.jobid, j.jobname,  e.empid, e.empname, e.city, j.salary from Emp e right join job  j on e.jobid=j.jobid   => 3
+
+select  j.jobid, j.jobname,  e.empid, e.empname, e.city, j.salary from job  j Left join Emp e  on e.jobid=j.jobid
+select  j.jobid, j.jobname,  e.empid, e.empname, e.city, j.salary from job j right join emp e on e.jobid=j.jobid
+
+ 
+jobid int primary key not null auto_increment,jobname varchar(50) not null,salary int - Job
+
+empid , empname, jobid ,city ,  - Emp
+select * from Emp where empname ="Kunta Nikhil Reddy"; 
+
+select * from Emp where empname between 'K' and 'S';
+
+select * from Emp where empname ="Kunta Nikhil Reddy"; 
+
+
+
+SELECT ascii('A');
+SELECT bin(65);
+select bin(ascii('A')) as BINARY1
+select character_length('Sample')
+
+insert into attendance(Cdate,Empid,Type) values('2022-04-11','E001',True);
+
+insert into attendance(Cdate,Empid,Type) values('2022-04-12','E001',True);
+insert into attendance(Cdate,Empid,Type) values('2022-04-11','E002',True);
+insert into attendance(Cdate,Empid,Type) values('2022-04-12','E002',True);
+insert into attendance(Cdate,Empid,Type) values('2022-04-11','E003',True);
+insert into attendance(Cdate,Empid,Type) values('2022-04-12','E003',True);
+insert into attendance(Cdate,Empid,Type) values('2022-04-11','E004',True);
+insert into attendance(Cdate,Empid,Type) values('2022-04-12','E004',True);
+
+Important:
+
+select j.jobid,j.jobname,e.empid,e.empname,e.city,j.salary,a.cdate ,a.Type  from  Job j inner join Emp e  on j.jobid=e.jobid inner join Attendance a on e.empid=a.empid order by e.empid;
+
+Trim function remove space before and after the sentence. It won't remove space between words.
+
+C#, SQL, Excel , java, Vb, python - lang support trim()
+
+sign up : 
+user name:    aaa
+
+apply trim to remove the space before and after user name .
+
+select ltrim('   Wipro   '),rtrim('   Wipro   ')
+
+select substring('Wipro',2,3)
+select substring('Wipro',3,3);
+
+SELECT locate('r','wipro');
+SELECT empname , locate('a',empname) FROM `emp` WHERE 1;
+
+
+
+
+

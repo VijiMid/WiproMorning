@@ -1,0 +1,104 @@
+Git -
+Its a version control
+
+
+mkdir - make directory
+cd - Change Directory
+git init-
+1. there are 2 ways to start git
+1. git init
+(initialize a repository and it contains a hidden folder called .git.
+
+This directory has all of the objects and reference of the git.)
+
+2. git clone
+
+>ls .git- to list out the folder
+
+> git branch -m main 
+-m (to create a master branch, branch name is main(desired branch name))
+
+>echo "Wipro Employees"vijaya nagarajan" > File1.txt
+Write some content to File1.txt
+
+>ls
+to view the File1.txt
+
+>cat file1.txt
+To view the content of the File1.txt
+git 
+
+> git status
+(red color)
+> git add File1.txt 
+( green color)
+>git commit -m "Students List" 
+
+> echo "Another Text" > File1.txt
+this command will replace the existing the content
+
+ echo "Another Text" >> File1.txt
+
+This command used to append the new content with existing one.
+
+> git config --global user.email viji_mid@yahoo.com
+>git config --list
+:q
+to come out from the configuration information
+
+Next step
+goto github.com
+use credentials
+create a new Repository
+
+ git remote add origin https://github.com/VijiMid/March31Rep.git
+
+in stackroute github
+Fork the repo
+Clone to your login
+-----------------------------------
+What is program?
+set of proper instructions/statement.
+Input + process -> output
+
+what is project?
+set of prog are called a project.
+diff between proj/Sw
+whenever a project come to the market or get the license, on that time it converted as a sw.
+
+Statement
+int a; // declaration 
+int a=10; //initilization
+a=10; // assigning 
+c=a+b; // processing
+
+3 - skipping / jumping
+1. break
+2. continue
+3. goto
+
+-------------------------
+C:\Users\ADMIN\source\repos
+default location to save projects in my laptop 
+----------------------------
+Comments - A compile ignores the comment lines\
+
+1. Single Line - //
+2. Multi line -
+ /* 
+*/
+3. Document
+---------------------
+1. Add, sub, div and multi
+2. do swapping 2 nos using 3rd variable
+3. swapping 2 nos without using 3 rd variable
+
+4. swapping 3 numbers without using third variable - assessment ques
+------------------
+9 to 1
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+Looping
+We can do particular task/ logic more than one time easily. (Iteration)
+default way
+
+for(inital ; condition checking ; incre/decre)
+{
+
+}
+
+// block - c,c++, java and C sharp 
+{
+
+}
+
+Way1
+
+int i=1;
+
+for(  ; condition checking ; incre/decre)
+{
+
+}
+
+------------------------------
+Input
+a Number = 10
+Table No = 5
+1*5=5
+2*5=10
+3*5=15
+.
+.
+.
+10*5=50
+-------------
+Pattern Prgs:
+1. How many rows?
+2. How many cols need in the rows?
+3. What number/value should print in the cell (Combination of rows and Cols) ?
+
+      1
+     1 2
+   1  2 3
+ 1  2  3  4
+ 1 2 3 4 5
+  1 2 3 4
+    1 2 3
+      1 2 
+        1
+
+1. Printing rows are same.
+2. printing cols should decrese
+3. What to print value should increse
+4. Need space before print cols (no of space should increse to each and every rows . i.e before start to print cols)
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+In Visual Studio
+
+Console App
+Should have Only one Entry Point . i.e Main()
+
+we can get access other files from this entry point.
+
+absolute Value - Without any Sign
+
+In keyboard each and every keys has a number
+
+Machine can understand only 0 ,1
+
+A - 65
+B - 66
+a - 97
+b- 98
